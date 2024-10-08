@@ -1,0 +1,744 @@
+/* 메인배너 관련 시작 */
+
+.main_box{
+    min-width: 1020px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.main_banner{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    left: 0%;
+    opacity: 0;
+}
+.main_banner:first-child{
+    opacity: 1;
+}
+.main_box > .contents_area{
+    position: relative;
+    pointer-events: none;
+    height: 450px;
+}
+.main_banner_left{
+    pointer-events: auto;
+    font-weight: 700;
+    box-sizing: border-box;
+    width: 172.37px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.main_banner_left li{
+    height: calc(450px / 14);
+    padding-left: 20px;
+    line-height: calc(450px / 14);
+}
+
+.main_banner_left li:last-child{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.main_banner_left_pan{
+    position: absolute;
+    left: 172.37px;
+    top: 0;
+    width: 220px;
+    height: 450px;
+    background-color: #fff;
+    color: #000;
+    display: none;
+}
+.main_banner_left li:hover >div{
+    display: block;
+}
+.main_banner_txt{
+    position: absolute;
+    left: 217px;
+    padding-top: 50px;
+    font-size:19px;
+}
+.main_banner .contents_area{
+    position: relative;
+}
+.m_b_title::after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 1px;
+    margin: 20px 0;
+    background: #b0afb6;
+    display: block;
+    width: 12px;
+    height: 1px;
+    margin: 20px 0;
+    background: #b0afb6;
+}
+.main_banner_txt strong{
+    display: block;
+    width: 360px;
+    margin-bottom: 10px;
+    font-size: 48px;
+    color: #1f1f1f;
+    line-height: 56px;
+    word-break: keep-all;
+    font-weight: 400;
+}
+.m_b_desc{
+    color: #767676;
+}
+#banner1{
+    background: #eeedf1 url(../img/olive_young/main_banner/main_banner_4.jpg) no-repeat center;
+    background-position: 50%;
+    background-size: cover;
+}
+#banner2{
+    background: #eeedf1 url(../img/olive_young/main_banner/main_banner_3.jpg) no-repeat center;
+    background-position: 50%;
+    background-size: cover;
+}
+#banner3{
+    background: #eeedf1 url(../img/olive_young/main_banner/main_banner_1.jpg) no-repeat center;
+    background-position: 50%;
+    background-size: cover;
+}
+#banner4{
+    background: #eeedf1 url(../img/olive_young/main_banner/main_banner_2.jpg) no-repeat center;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.btn_box{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.btn_slide{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    line-height: 47px;
+    font-size: 30px;
+}
+
+#pause{
+    font-size: 20px;
+    line-height: 44px;
+}
+
+/* 메인배너 관련 끝 */
+
+.small_banner{
+    width: 100%;
+    height: 102px;
+    background: url(../img/olive_young/small_banner.jpg) no-repeat;
+    padding-bottom: 60px;
+}
+
+/* 요즘 주목, 당신을 위한*/
+#sec1{
+    display: flex;
+    justify-content: space-between;
+}
+.thesedays, .for_you{
+    width: 50%;
+    font-size: 24.5px;
+    font-weight: 650;
+    /* padding-left: 29px; */
+    box-sizing: border-box;
+    padding-right: 29px;
+    position: relative;
+    margin-bottom: 0;
+}
+.thesedays_title,
+.for_you_title{
+    padding-left: 23px;
+    box-sizing: border-box;
+}
+.more{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: right;
+    font-size: 15px;
+    color: #bababa;
+    box-sizing: border-box;
+}
+.log_bar{
+    width: 1px;
+    height: 380px;
+    background: #ddd;
+}
+.sec1_box_container{
+    position: absolute;
+    height: 380px;
+    width: 100%;  
+    overflow: hidden;
+}
+.sec1_box{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.sec1_contents{font-size: 0;}
+.sec1_contents_img{
+    display: inline-block;
+}
+.sec1_contents_img > img{
+    width: 215px;
+    height: 215px;
+}
+.sec1_contents_img{
+    position: relative;
+}
+.sec1_contents_txt{
+    width: 215px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sec1_contents_item_desc{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    line-height: 1.04;
+}
+.best_item{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 48px;
+    height: 48px;
+    color: salmon;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 44;
+    text-align: center;
+    line-height: 46px;
+    font-size: 14px;
+}
+.item_price_box{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    /* overflow: hidden; */
+}
+#sec1 .item_price_box{
+    text-align: left;
+}
+.item_price_box > img{
+    float: right;
+}
+.original_price{
+    color: #8a8a8a;
+    font-size: 13px;
+    text-decoration:line-through;
+    line-height: 23px;
+    padding-right: 5px;
+}
+.item_price{
+    vertical-align: top;
+    color: #e02020;
+    font-size: 20px;
+    font-weight: 600;
+}
+#sec1 .item_events,
+#sec6 .item_events{
+    justify-content: left;
+}
+#sec6 .item_price_box{
+    text-align: left;
+}
+.item_events{
+    width: 100%;
+    height: 20px;
+    /* background-color: red; */
+    display: flex;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    justify-content: center;
+}
+.item_events > div {
+    text-align: center !important;
+}
+.item_events_sale{
+    width: 40px;
+    height: 18px;
+    background-color: salmon;
+    border-radius: 10px;
+
+}
+.item_events_today{
+    width: 60px;
+    height: 18px;
+    background-color: hotpink;
+    border-radius: 10px;
+
+}
+.item_events_coupon{
+    width: 40px;
+    height: 18px;
+    background-color: #82dc28;
+    border-radius: 10px;
+
+}
+.sec1_contents_more{
+    width: 335px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #ddd;
+}
+/* sec1 끝 */
+#sec2{
+    margin-top: 80px;
+}
+.weekly_special_box{
+    width: 100%;
+    /* background-color: purple; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.weekly_special img{
+    width: 500px;
+    height: 375px;
+}
+.weekly_title{
+    width: 100%;
+    text-align: center;
+    font-size: 24.5px;
+    font-weight: 650;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.weekly_special{
+    width: 500px;
+    height: 375px;
+    position: relative;
+}
+.weekly_txt,
+.popular_txt
+{
+    padding-top: 7px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+    text-align: center;
+    color: #fff;
+}
+#sec3 .popular_txt{
+    background-color: rgba(15, 15, 15, 0.2);
+}
+.weekly_txt > div,
+.popular_txt > div
+{
+    font-weight: 700;
+    line-height: 33.6px;
+    font-size: 28px;
+}
+.weekly_hashtag{
+    font-weight: 400 !important;
+    font-size: 21.6px !important;
+    margin-top: 8px;
+    line-height: 33.6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.weekly_special > img{
+    width: 500px;
+    height: 375px;
+}
+/* weekly 끝 */
+#sec3{
+    position: relative;
+    min-width: 1020px;
+    margin-bottom: 50px;
+}
+@media (max-width : 1160px){
+    #sec3,
+    #sec5{
+        overflow: hidden;
+    }
+}
+.popular_event_box{
+    width: 100%;
+    height: 753px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular_banner{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: 675px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.popular_event_title{
+    width: 100%;
+    text-align: center;
+    font-size: 24.5px;
+    font-weight: 650;
+    margin-top: 30px;
+}
+.popular_event_sec{
+    width: 500px;
+    height: 675px;
+    position: relative;
+    overflow: hidden;
+}
+.p1{
+    background: url(../img/olive_young/event/event1_1_main.jpg) no-repeat top;
+    background-size: contain;
+}
+.p2{
+    background: url(../img/olive_young/event/event1_2_main.jpg) no-repeat top;
+    background-size: contain;   
+}
+.p3{
+    background: url(../img/olive_young/event/event3_1_main.jpg) no-repeat top;
+    background-size: contain;
+}
+.p4{
+    background: url(../img/olive_young/event/event3_2_main.jpg) no-repeat top;
+    background-size: contain;
+}
+
+.popular_event_contents_box{
+    width: 475px;
+    padding: 15px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    height: 355px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+}
+
+.popular_event_contents_img > img{
+    width: 215px;
+}
+.popular_event_contents_img .best_item{
+    top: 20px;
+    left: 20px;
+}
+
+
+
+
+.popular_event_long_bar{
+    width: 1px;
+    height: 100%px;
+    background-color: #ddd;
+}
+
+
+#popular_btnL{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -60px;
+}
+#popular_btnR{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+}
+
+/* 섹션 3끝*/
+#sec4{
+    position: relative;
+}
+.only_banner_box{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 145.21px;
+}
+.only_banner_sec{
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.only_banner_txt{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+.only_txt_desc{
+    font-size: 15px;
+    margin-top: 7px;
+    font-weight: 400;
+}
+.only_banner  img{
+    height: 145.21px;
+    border-radius: 3px;
+}
+.only_banner{
+    position: relative;
+}
+.only_title{
+    width: 100%;
+    text-align: center;
+    font-size: 24.5px;
+    font-weight: 650;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.indi_box{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+}
+.indi{
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #ddd;
+}
+.indi:hover{
+    cursor: pointer;
+}
+.indi.active{
+    background-color: #000;
+    color: white;
+}
+/* 섹션4 끝 */
+#sec5{
+    position: relative;
+    /* border: 1px solid; */
+    margin-top: 50px;
+}
+#sec1 .sec1_contents_txt div{
+    text-align: left;
+}
+.how_about_title{
+    width: 100%;
+    text-align: center;
+    font-size: 24.5px;
+    font-weight: 650;
+    margin-bottom: 15px;
+}
+.how_about_long_bar{
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 15px;
+}
+
+.how_about_banner_box{
+    overflow: hidden;
+    width: 100%;
+    height: 333px;
+    position: relative;
+}
+.how_about_box{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#how_about_btnL{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -60px;
+}
+#how_about_btnR{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+}
+/* sec5 끝 */
+
+
+#sec6{
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.lots_of_title{
+    width: 100%;
+    text-align: center;
+    font-size: 24.5px;
+    font-weight: 650;
+    margin-bottom: 15px;
+}
+.lots_of_left{
+    box-sizing: border-box;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.lots_of_left_contents{
+    position: absolute;
+    top: 100%;
+}
+.lots_of_left_contents a{
+    display: flex;
+}
+.lots_of_left_img{
+    width: 175px;
+    margin-right: 20px;
+}
+.lots_of_left_txt{
+    font-size: 13px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    width: 235px;
+
+}
+.viewing{
+    background: url(../img/olive_young/viewing.png) no-repeat center left;
+    background-size: 18px 12px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    height: 17px;
+    line-height: 20px;
+    color: #f27370;
+    margin-bottom: 7px;
+}
+.lots_of_item_title{
+    color: #777;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.lots_of_item_desc{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.lots_of_left .original_price{
+    width: 100%;
+}
+
+.lots_of_right{
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    height: 202px;
+    overflow: hidden;
+    position: relative;
+}
+.lots_of_right_box{
+    position: absolute;
+    top: 0%;
+    width: calc(100% - 15px);
+}
+.lots_of_right_contents{
+    color: #a3a3a3;
+    height: calc((100%)/ 5);
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 7px;
+    line-height: calc(200px / 5);
+}
+.lots_of_right_contents.active{
+    color: #000;
+    border: 1px solid;
+}
+.lots_of_right_no{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0px 15px 0px 20px;
+}
+.lots_of_right_name{
+    font-size: 14px;
+    font-weight: 400;
+    /* pd */
+}
+.update{
+    height: 24px;
+    padding-left: 22px;
+    margin-right: 7px;
+    line-height: 25px;
+    font-size: 14px;
+    background: url(../img/olive_young/update_icon.png) no-repeat top left;
+    background-size: 20px, 20px;
+    color: #aaa;
+}

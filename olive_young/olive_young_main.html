@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+    <link rel="stylesheet" href="./header_footer.css">
+    <link rel="stylesheet" href="./mainpage.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="contents_area">
+                <ul class="h_top">
+                    <li><a href="">회원가입</a></li>
+                    <li class="column_bar"></li>
+                    <li><a href="">로그인</a></li>
+                    <li class="column_bar"></li>
+                    <li><a href="">장바구니</a></li>
+                    <li class="column_bar"></li>
+                    <li><a href="">주문배송</a></li>
+                    <li class="column_bar"></li>
+                    <li><a href="">고객센터</a></li>
+                    <li class="column_bar"></li>
+                    <li><a href="">매장안내</a></li>
+                    <li class="column_bar"></li>
+                    <li><a href="">Global</a></li>
+                </ul>
+                <div class="h_bot">
+                    <a href="./olive_young_main.html"><div class="logo">logo</div></a>
+                    <div class="search_box">
+                        <input type="text" placeholder="상품, 브랜드, 성분 검색">
+                        <div class="search_logo"></div>
+                    </div>
+                    <div class="h_bot_right">
+                        <div class="today_get">
+                            <a href="">오늘드림</a>                
+                        </div>
+                        <div class="column_bar" style="height: 20px;"></div>
+                        <div class="interesting_shop">
+                            <a href="">관심매장소식 ▾</a>                      
+                        </div>
+                        <div class="column_bar" style="height: 20px;"></div>
+                        <div class="recent_item">
+                            <a href="">최근 본 상품 ▾</a>                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="nav">
+                <div class="contents_area">
+                    <div class="nav_category">
+                        <div class="ham_btn">
+                            <div class="row_bar"></div>
+                            <div class="row_bar"></div>
+                            <div class="row_bar"></div>
+                        </div>
+                        <span>카테고리</span>
+                    </div>
+                    <span><a href="" class="nav_menu">오특</a>  
+                    </span>
+                    <span><a href="" class="nav_menu">랭킹</a>  
+                    </span>
+                    <span><a href="" class="nav_menu">헬스+</a> 
+                    </span>
+                    <span><a href="" class="nav_menu">LUXE EDIT</a> 
+                    </span>
+                    <span><a href="" class="nav_menu">기획전</a>    
+                    </span>
+                    <span><a href="" class="nav_menu">세일</a>  
+                    </span>
+                    <span><a href="" class="nav_menu">기프트카드</a>    
+                    </span>
+                    <span><a href="" class="nav_menu">멤버십/쿠폰</a>   
+                    </span>
+                    <span><a href="" class="nav_menu">이벤트</a>    
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main_box">
+            <div class="main_banner" id="banner1">
+                <div class="contents_area">
+                    <div class="main_banner_txt">
+                        <b class="m_b_title">올영PICK</b>
+                        
+                        <div><strong>에스파 윈터가</strong></div>
+                        <div><strong>되어봐요</strong></div>
+                        <div><strong>하하호호하하</strong></div>
+                        
+                        <b class="m_b_desc">너도 윈터가 될 수 있어!</b>
+                    </div>
+                </div>
+            </div>
+            <div class="main_banner" id="banner2">
+                <div class="contents_area">
+                    <div class="main_banner_txt">
+                        <b class="m_b_title">올영PICK</b>
+                        <strong>맛있는젤리</strong>
+                        <b class="m_b_desc">먹어봐요</b>
+                    </div>
+                </div>
+            </div>
+            <div class="main_banner" id="banner3">
+                <div class="contents_area">
+                    <div class="main_banner_txt">
+                        <b class="m_b_title" style="color: white;">올영PICK</b>
+
+                        <div><strong style="color: white;">덱스가 쓰는</strong></div>
+                        <div><strong style="color: white;">올인원 메이크업</strong></div>
+                        
+                        <b class="m_b_desc" style="color: #ddd">오브제</b>
+                    </div>
+                </div>
+            </div>
+            <div class="main_banner" id="banner4">
+                <div class="contents_area">
+                    <div class="main_banner_txt">
+                        <b class="m_b_title">라이즈PICK</b>
+                        <strong>화이팅</strong>
+                        <b class="m_b_desc">에베베ㅔ</b>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_box">
+                <div class="btn_slide" id="btnL">←</div>
+                <div class="banner_no">saf</div>
+                <div class="btn_slide" id="btnR">→</div>
+                <div class="btn_slide" id="pause">▶︎</div>
+            </div>
+            <div class="contents_area">
+                <ul class="main_banner_left">
+                    <li>
+                        <a href="">스킨케어</a>
+                        <div class="main_banner_left_pan">1</div>
+                    </li>
+                    <li>
+                        <a href="">메이크업/네일</a>
+                        <div class="main_banner_left_pan">2</div>
+                    </li>
+                    <li>
+                        <a href="">미용소품</a>
+                        <div class="main_banner_left_pan">3</div>
+                    </li>
+                    <li>
+                        <a href="">더모 코스메틱</a>
+                        <div class="main_banner_left_pan">4</div>
+                    </li>
+                    <li>
+                        <a href="">맨즈케어</a>
+                        <div class="main_banner_left_pan">5</div>
+                    </li>
+                    <li>
+                        <a href="">향수/디퓨저</a>
+                        <div class="main_banner_left_pan">6</div>
+                    </li>
+                    <li>
+                        <a href="">헤어케어</a>
+                        <div class="main_banner_left_pan">7</div>
+                    </li>
+                    <li>
+                        <a href="">바디케어</a>
+                        <div class="main_banner_left_pan">8</div>
+                    </li>
+                    <li>
+                        <a href="">건강식품</a>
+                        <div class="main_banner_left_pan">9</div>
+                    </li>
+                    <li>
+                        <a href="">푸드</a>
+                        <div class="main_banner_left_pan">10</div>
+                    </li>
+                    <li>
+                        <a href="">구강/건강용품</a>
+                        <div class="main_banner_left_pan">11</div>
+                    </li>
+                    <li>
+                        <a href="">여성/위생용품</a>
+                        <div class="main_banner_left_pan">12</div>
+                    </li>
+                    <li>
+                        <a href="">라이프/팬시</a>
+                        <div class="main_banner_left_pan">13</div>
+                    </li>
+                    <li>
+                        <a href="">AWARDS</a>
+                        <div class="main_banner_left_pan">14</div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="contents_area">
+            <div class="small_banner"></div>
+        </div>
+        
+        <div class="main_section">             
+            <div class="contents_area">
+                <div class="sec" id="sec1">
+                    <div class="thesedays">
+                        <div class="thesedays_title">
+                            요즘 주목 받는 상품
+                        </div>
+                        <div class="more"><a href="">더보기 〉</a></div>
+                        <div class="sec1_box_container">
+                
+                        </div>
+                        <div class="sec1_contents_more">다른상품 추천해드릴게요</div>
+                    </div>
+
+                    <div class="log_bar"></div>
+
+                    <div class="for_you">
+                        <div class="for_you_title">
+                            고객님을 위한 추천 상품
+                        </div>
+                        <div class="more"><a href="">더보기 〉</a></div>
+                        <div class="sec1_box_container">
+                        </div>
+                        <div class="sec1_contents_more">다른상품 추천해드릴게요</div>
+                    </div>
+                </div>
+                <div class="sec" id="sec2">
+                    <div class="weekly_special_box">
+                        <div class="weekly_title">Weekly Special</div>
+                        <!-- <div class="weekly_special">
+                            <img src="../img/olive_young/weekly_special_1.jpg" alt="">
+                            <div class="weekly_txt">
+                                <div>모델들의 피부를</div>
+                                <div>원하나요?</div>
+                                <div class="weekly_hashtag">#바이컬러로 가자</div>
+                            </div>
+                        </div>
+                        <div class="weekly_special">
+                            <img src="../img/olive_young/weekly_special_2.jpg" alt="">
+                            <div class="weekly_txt">
+                                <div>누구세요?</div>
+                                <div>올리브영</div>
+                                <div class="weekly_hashtag">#가나다라마사</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="sec" id="sec3">
+                    <div class="popular_event_box">
+                        <div class="popular_event_title">인기 행사만 모았어요!</div>
+
+                        <!-- <div class="popular_banner">
+                            <div class="popular_event_sec p1">
+                                <div class="popular_txt">
+                                    <div>모델들의 피부를</div>
+                                    <div>원하나요?</div>
+                                    <div class="weekly_hashtag">#바이컬러로 가자</div>
+                                </div>
+                                <div class="popular_event_contents_box">
+                                    <div class="popular_event_contents_img">
+                                        <img src="../img/olive_young/event/event1_1_1.jpg" alt="">
+                                        <div class="weekly_txt">
+                                        </div>
+                                    </div>
+                                    <div class="sec1_contents_txt">
+                                        <div class="sec1_contents_item_desc">
+                                            <div>[9월 올영픽 / 카즈하 PICK]</div>
+                                            <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                        </div>
+                                        <div class="item_price_box">
+                                            <div class="original_price">123</div>
+                                            <span class="item_price">45,000원</span>
+                                            <img src="../img/olive_young/icon_bag.png" alt="">
+                                            <div class="item_events">
+                                                <div class="item_events_sale">세일</div>
+                                                <div class="item_events_today">오늘드림</div>
+                                                <div class="item_events_coupon">쿠폰</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular_event_contents_img">
+                                        <img src="../img/olive_young/event/event1_1_2.jpg" alt="">
+                                    </div>
+                                    <div class="sec1_contents_txt">
+                                        <div class="sec1_contents_item_desc">
+                                            <div>[9월 올영픽 / 카즈하 PICK]</div>
+                                            <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                        </div>
+                                        <div class="item_price_box">
+                                            <span class="item_price">45,000원</span>
+                                            <img src="../img/olive_young/icon_bag.png" alt="">
+                                            <div class="item_events">
+                                                <div class="item_events_sale">세일</div>
+                                                <div class="item_events_today">오늘드림</div>
+                                                <div class="item_events_coupon">쿠폰</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular_event_long_bar"></div>
+                            <div class="popular_event_sec p2">
+                                <div class="popular_txt">
+                                    <div>모델들의 피부를</div>
+                                    <div>원하나요?</div>
+                                    <div class="weekly_hashtag">#바이컬러로 가자</div>
+                                </div>
+                                <div class="popular_event_contents_box">
+                                    <div class="popular_event_contents"></div>
+                                    <div class="popular_event_contents"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="popular_banner">
+                            <div class="popular_event_sec p3">
+                                <div class="popular_event_contents_box">
+                                    <div class="popular_event_contents_img">
+                                        <img src="../img/olive_young/event/event1_1_1.jpg" alt="">
+                                    </div>
+                                    <div class="sec1_contents_txt">
+                                        <div class="sec1_contents_item_desc">
+                                            <div>[9월 올영픽 / 카즈하 PICK]</div>
+                                            <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                        </div>
+                                        <div class="item_price_box">
+                                            <span class="item_price">45,000원</span>
+                                            <img src="../img/olive_young/icon_bag.png" alt="">
+                                            <div class="item_events">
+                                                <div class="item_events_sale">세일</div>
+                                                <div class="item_events_today">오늘드림</div>
+                                                <div class="item_events_coupon">쿠폰</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular_event_contents_img">
+                                        <img src="../img/olive_young/event/event1_1_2.jpg" alt="">
+                                    </div>
+                                    <div class="sec1_contents_txt">
+                                        <div class="sec1_contents_item_desc">
+                                            <div>[9월 올영픽 / 카즈하 PICK]</div>
+                                            <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                        </div>
+                                        <div class="item_price_box">
+                                            <span class="item_price">45,000원</span>
+                                            <img src="../img/olive_young/icon_bag.png" alt="">
+                                            <div class="item_events">
+                                                <div class="item_events_sale">세일</div>
+                                                <div class="item_events_today">오늘드림</div>
+                                                <div class="item_events_coupon">쿠폰</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular_event_long_bar"></div>
+                            <div class="popular_event_sec p4">
+                                <div class="popular_event_contents_box">
+                                    <div class="popular_event_contents"></div>
+                                    <div class="popular_event_contents"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="popular_banner">
+                            <div class="popular_event_sec p1">
+                                <div class="popular_event_contents_box">
+                                    <div class="popular_event_contents_img">
+                                        <img src="../img/olive_young/event/event1_1_1.jpg" alt="">
+                                    </div>
+                                    <div class="sec1_contents_txt">
+                                        <div class="sec1_contents_item_desc">
+                                            <div>[9월 올영픽 / 카즈하 PICK]</div>
+                                            <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                        </div>
+                                        <div class="item_price_box">
+                                            <span class="item_price">45,000원</span>
+                                            <img src="../img/olive_young/icon_bag.png" alt="">
+                                            <div class="item_events">
+                                                <div class="item_events_sale">세일</div>
+                                                <div class="item_events_today">오늘드림</div>
+                                                <div class="item_events_coupon">쿠폰</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular_event_contents_img">
+                                        <img src="../img/olive_young/event/event3_1_2.jpg" alt="">
+                                    </div>
+                                    <div class="sec1_contents_txt">
+                                        <div class="sec1_contents_item_desc">
+                                            <div>[9월 올영픽 / 카즈하 PICK]</div>
+                                            <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                        </div>
+                                        <div class="item_price_box">
+                                            <span class="item_price">45,000원</span>
+                                            <img src="../img/olive_young/icon_bag.png" alt="">
+                                            <div class="item_events">
+                                                <div class="item_events_sale">세일</div>
+                                                <div class="item_events_today">오늘드림</div>
+                                                <div class="item_events_coupon">쿠폰</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular_event_long_bar"></div>
+                            <div class="popular_event_sec p2">
+                                <div class="popular_event_contents_box">
+                                    <div class="popular_event_contents"></div>
+                                    <div class="popular_event_contents"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="popular_banner">
+                            <div class="popular_event_sec p1">
+                                <div class="popular_event_contents_box">
+                                    <div class="popular_event_contents_img">
+                                        <img src="../img/olive_young/event/event3_1_1.jpg" alt="">
+                                    </div>
+                                    <div class="sec1_contents_txt">
+                                        <div class="sec1_contents_item_desc">
+                                            <div>[9월 올영픽 / 카즈하 PICK]</div>
+                                            <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                        </div>
+                                        <div class="item_price_box">
+                                            <span class="item_price">45,000원</span>
+                                            <img src="../img/olive_young/icon_bag.png" alt="">
+                                            <div class="item_events">
+                                                <div class="item_events_sale">세일</div>
+                                                <div class="item_events_today">오늘드림</div>
+                                                <div class="item_events_coupon">쿠폰</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular_event_contents_img">
+                                        <img src="../img/olive_young/event/event3_1_2.jpg" alt="">
+                                    </div>
+                                    <div class="sec1_contents_txt">
+                                        <div class="sec1_contents_item_desc">
+                                            <div>[9월 올영픽 / 카즈하 PICK]</div>
+                                            <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                        </div>
+                                        <div class="item_price_box">
+                                            <span class="item_price">45,000원</span>
+                                            <img src="../img/olive_young/icon_bag.png" alt="">
+                                            <div class="item_events">
+                                                <div class="item_events_sale">세일</div>
+                                                <div class="item_events_today">오늘드림</div>
+                                                <div class="item_events_coupon">쿠폰</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular_event_long_bar"></div>
+                            <div class="popular_event_sec p2">
+                                <div class="popular_event_contents_box">
+                                    <div class="popular_event_contents"></div>
+                                    <div class="popular_event_contents"></div>
+                                </div>
+                            </div>
+
+                        </div> -->
+                        
+                    </div>
+                    <div class="btn_slide" id="popular_btnL">←</div>
+                    <div class="btn_slide" id="popular_btnR">→</div>
+                </div>
+                <div class="sec" id="sec4">
+                    <div class="only_title">오직 올리브영에서만</div>
+                    <div class="only_banner_box">
+                        <!-- <div class="only_banner_sec">
+                            <div class="only_banner only_banner_1">
+                                <img src="../img/olive_young/only_in_oliveyoung_1.jpg" alt="">
+                                <div class="only_banner_txt">
+                                    <div>모델들의 피부를</div>
+                                    <div>원하나요?</div>
+                                    <div class="only_txt_desc">#바이컬러로 가자</div>
+                                </div>
+                            </div>
+                            <div class="only_banner only_banner_2">
+                                <img src="../img/olive_young/only_in_oliveyoung_2.jpg" alt="">
+                                <div class="only_banner_txt">
+                                    <div>모델들의 피부를</div>
+                                    <div>원하나요?</div>
+                                    <div class="only_txt_desc">#바이컬러로 가자</div>
+                                </div>
+                            </div>
+                            <div class="only_banner only_banner_3">
+                                <img src="../img/olive_young/only_in_oliveyoung_3.jpg" alt="">
+                                <div class="only_banner_txt">
+                                    <div>모델들의 피부를</div>
+                                    <div>원하나요?</div>
+                                    <div class="only_txt_desc">#바이컬러로 가자</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="only_banner_sec">
+                            <div class="only_banner only_banner_1">
+                                <img src="../img/olive_young/only_in_oliveyoung_4.jpg" alt="">
+                                <div class="only_banner_txt">
+                                    <div>모델들의 피부를</div>
+                                    <div>원하나요?</div>
+                                    <div class="only_txt_desc">#바이컬러로 가자</div>
+                                </div>
+                            </div>
+                            <div class="only_banner only_banner_2">
+                                <img src="../img/olive_young/only_in_oliveyoung_5.jpg" alt="">
+                                <div class="only_banner_txt">
+                                    <div>모델들의 피부를</div>
+                                    <div>원하나요?</div>
+                                    <div class="only_txt_desc">#바이컬러로 가자</div>
+                                </div>
+                            </div>
+                            <div class="only_banner only_banner_3">
+                                <img src="../img/olive_young/only_in_oliveyoung_6.jpg" alt="">
+                                <div class="only_banner_txt">
+                                    <div>모델들의 피부를</div>
+                                    <div>원하나요?</div>
+                                    <div class="only_txt_desc">#바이컬러로 가자</div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="indi_box">
+                        <div class="indi active">1</div>
+                        <div class="indi">2</div>
+                    </div>
+                </div>
+                <div class="sec" id="sec5">
+                    <div class="how_about_title">이 상품 어때요?</div>
+                    <div class="how_about_long_bar"></div>
+                    <div class="how_about_banner_box">
+                        <!-- <div class="how_about_box">
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_1.jpg" alt="">
+                                    <div class="best_item">베스트</div>
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    <div class="sec1_contents_item_desc">
+                                        <div>[9월 올영픽 / 고윤정 PICK]</div>
+                                        <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                    </div>
+                                    <div class="item_price_box">
+                                        <span class="original_price">111,500</span>
+                                        <span class="item_price">45,000원</span>
+                                        <img src="../img/olive_young/icon_bag.png" alt="">
+                                        <div class="item_events">
+                                            <div class="item_events_sale">세일</div>
+                                            <div class="item_events_today">오늘드림</div>
+                                            <div class="item_events_coupon">쿠폰</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_2.jpg" alt="">
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    상품에 대한 상세 설명입니다!! 하하 하하 하하 하하
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_3.jpg" alt="">
+                                    <div class="best_item">베스트</div>
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    <div class="sec1_contents_item_desc">
+                                        <div>[9월 올영픽 / 고윤정 PICK]</div>
+                                        <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                    </div>
+                                    <div class="item_price_box">
+                                        <span class="original_price">111,500</span>
+                                        <span class="item_price">45,000원</span>
+                                        <img src="../img/olive_young/icon_bag.png" alt="">
+                                        <div class="item_events">
+                                            <div class="item_events_sale">세일</div>
+                                            <div class="item_events_today">오늘드림</div>
+                                            <div class="item_events_coupon">쿠폰</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_111.jpg" alt="">
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    상품에 대한 상세 설명입니다!! 하하 하하 하하 하하
+                                </div>
+                            </div>
+                        </div>
+                        <div class="how_about_box">
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_4.jpg" alt="">
+                                    <div class="best_item">베스트</div>
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    <div class="sec1_contents_item_desc">
+                                        <div>[9월 올영픽 / 고윤정 PICK]</div>
+                                        <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                    </div>
+                                    <div class="item_price_box">
+                                        <span class="original_price">111,500</span>
+                                        <span class="item_price">45,000원</span>
+                                        <img src="../img/olive_young/icon_bag.png" alt="">
+                                        <div class="item_events">
+                                            <div class="item_events_sale">세일</div>
+                                            <div class="item_events_today">오늘드림</div>
+                                            <div class="item_events_coupon">쿠폰</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_5.jpg" alt="">
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    상품에 대한 상세 설명입니다!! 하하 하하 하하 하하
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_6.jpg" alt="">
+                                    <div class="best_item">베스트</div>
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    <div class="sec1_contents_item_desc">
+                                        <div>[9월 올영픽 / 고윤정 PICK]</div>
+                                        <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                    </div>
+                                    <div class="item_price_box">
+                                        <span class="original_price">111,500</span>
+                                        <span class="item_price">45,000원</span>
+                                        <img src="../img/olive_young/icon_bag.png" alt="">
+                                        <div class="item_events">
+                                            <div class="item_events_sale">세일</div>
+                                            <div class="item_events_today">오늘드림</div>
+                                            <div class="item_events_coupon">쿠폰</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_7.jpg" alt="">
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    상품에 대한 상세 설명입니다!! 하하 하하 하하 하하
+                                </div>
+                            </div>
+                        </div>
+                        <div class="how_about_box">
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_8.jpg" alt="">
+                                    <div class="best_item">베스트</div>
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    <div class="sec1_contents_item_desc">
+                                        <div>[9월 올영픽 / 고윤정 PICK]</div>
+                                        <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                    </div>
+                                    <div class="item_price_box">
+                                        <span class="original_price">111,500</span>
+                                        <span class="item_price">45,000원</span>
+                                        <img src="../img/olive_young/icon_bag.png" alt="">
+                                        <div class="item_events">
+                                            <div class="item_events_sale">세일</div>
+                                            <div class="item_events_today">오늘드림</div>
+                                            <div class="item_events_coupon">쿠폰</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_9.jpg" alt="">
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    상품에 대한 상세 설명입니다!! 하하 하하 하하 하하
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_10.jpg" alt="">
+                                    <div class="best_item">베스트</div>
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    <div class="sec1_contents_item_desc">
+                                        <div>[9월 올영픽 / 고윤정 PICK]</div>
+                                        <div>상품에 대한 상세 설명입니다!! 하하 하하 하하 하하</div>
+                                    </div>
+                                    <div class="item_price_box">
+                                        <span class="original_price">111,500</span>
+                                        <span class="item_price">45,000원</span>
+                                        <img src="../img/olive_young/icon_bag.png" alt="">
+                                        <div class="item_events">
+                                            <div class="item_events_sale">세일</div>
+                                            <div class="item_events_today">오늘드림</div>
+                                            <div class="item_events_coupon">쿠폰</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec1_contents">
+                                <div class="sec1_contents_img">
+                                    <img src="../img/olive_young/how_about_this/how_about_this_12.jpg" alt="">
+                                </div>
+                                <div class="sec1_contents_txt">
+                                    상품에 대한 상세 설명입니다!! 하하 하하 하하 하하
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="btn_slide" id="how_about_btnL">←</div>
+                    <div class="btn_slide" id="how_about_btnR">→</div>
+                    <div class="indi_box">
+                        <div class="indi active">1</div>
+                        <div class="indi">2</div>
+                        <div class="indi">3</div>
+                    </div>
+                </div>
+                <div class="sec" id="sec6">
+                    <div class="lots_of_title">조회 급상승 TOP 10</div>
+                    <div class="how_about_long_bar"></div>
+                    <div class="lots_of_left">
+
+                    </div>
+                    <div class="lots_of_right">
+                        <div class="lots_of_right_box">
+                        </div>
+                        
+                    </div>
+                    <div class="indi_box">
+                        <div class="update">업데이트</div>
+                        <div class="indi active">1</div>
+                        <div class="indi">2</div>
+                    </div>
+                    <div class="how_about_long_bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="./load_list.js"></script>
+    <script src="./header_footer.js"></script>
+    <script src="./mainpage.js"></script>
+</body>
+</html>
